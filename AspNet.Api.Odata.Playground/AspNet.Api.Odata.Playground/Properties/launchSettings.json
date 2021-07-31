@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "oData-api": {
+    "OData-Example-Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
