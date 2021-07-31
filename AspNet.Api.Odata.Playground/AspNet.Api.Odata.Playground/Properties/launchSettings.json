@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "AspNet.Api.Odata.Playground": {
+    "oData-api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
