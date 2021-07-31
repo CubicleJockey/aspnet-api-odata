@@ -12,6 +12,7 @@ namespace AspNet.Api.Odata.Playground.Fakers
             RuleFor(product => product.Description, prop => prop.Lorem.Paragraphs(2));
             RuleFor(product => product.Manufactured, prop => prop.Date.Past());
             RuleFor(product => product.Released, prop => prop.Date.Future());
+            RuleFor(product => product.Price, prop => decimal.Parse(prop.Commerce.Price()));
         }
     }
 }

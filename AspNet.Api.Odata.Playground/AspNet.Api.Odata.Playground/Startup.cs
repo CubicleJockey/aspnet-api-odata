@@ -24,8 +24,7 @@ namespace AspNet.Api.Odata.Playground
         {
 
             services.AddControllers()
-                    .AddOData(/*options => options.AddRouteComponents("odata", GetEdmModel())*/);
-
+                    .AddOData(options => options.Filter());
 
             services.AddDbContext<DatabaseContext>(options => options.UseInMemoryDatabase("TestDatabase"));
 

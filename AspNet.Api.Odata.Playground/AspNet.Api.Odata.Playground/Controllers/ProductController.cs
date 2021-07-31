@@ -2,6 +2,7 @@
 using AspNet.Api.Odata.Playground.DataGenerators;
 using AspNet.Api.Odata.Playground.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace AspNet.Api.Odata.Playground.Controllers
         }
 
         [HttpGet]
+        [EnableQuery]
         public IEnumerable<Product> GetProducts()
         {
             return database.Products.ToArray();
